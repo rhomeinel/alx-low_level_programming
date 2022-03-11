@@ -4,3 +4,5 @@ Task 1-last_digit.c is a C program that will assign a random number to the varia
 
 Task 2-print_alphabet.c is a C program that prints the alphabet in lowercase, followed by a new line.
 Task 3-print_alphabt.c is a C program that prints the alphabet in lowercase, except q and e, followed by a new line.
+
+Task 4-print_alphabets.c is a C program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
