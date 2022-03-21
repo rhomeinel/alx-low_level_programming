@@ -15,4 +15,4 @@ void _puts(char *str)
 		i += 1;
 	}
 	_putchar('\n');
-}		
+}
