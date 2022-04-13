@@ -1,28 +1,19 @@
-#include "variadic_functions.h"
-
+#include <stdio.h>
+#include "function_pointers.h"
 /**
- * print_numbers - prints numbers given as parameters
- * @separator: string to be printed between numbers
- * @n: number of integers passed to the function
- */
-void print_numbers(const char *separator, const unsigned int n, ...)
+ * array_iterator - function executes a function on array
+ * @array: pointer to array
+ * @size: number elements in array
+ * @action: pointer to function
+ * Return: nothing
+ **/
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
-	va_list list;
 
-	va_start(list, n);
-
-	for (i = 0; i < n; i++)
+	if (array != NULL && size > 0 && action != NULL)
 	{
-		if (!separator)
-			printf("%d", va_arg(list, int));
-		else if (separator && i == 0)
-			printf("%d", va_arg(list, int));
-		else
-			printf("%s%d", separator, va_arg(list, int));
+		for (i = 0; i < size; i++)
+			action(array[i]);
 	}
-
-	va_end(list);
-
-	printf("\n");
 }
