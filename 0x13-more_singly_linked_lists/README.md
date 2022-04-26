@@ -20,3 +20,14 @@ Task 9: File-9-insert_nodeint.c Write a function that inserts a new node at a gi
 
 Task 10: File-10-delete_nodeint.c Write a function that deletes the node at index index of a listint_t linked list.
 
+Task 11: File-100-reverse_listint.c is a function that reverses a linked list.
+
+Task 12: File-101-print_listint_safe.c is a function that prints a listint_t linked list, safely.
+
+Task 13: File-102-free_listint_safe.c is a function that frees a listint_t list, safely.
+
+Task 14: File-103-find_loop.c is a function that finds the loop in a linked list.
+
+File lists.h is the header file containing all these function prototypes and the data structure listint_t.
+
+
